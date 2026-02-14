@@ -1,0 +1,233 @@
+# @ai/exa-cli
+
+> A powerful CLI tool for the Exa AI search API. Query the web with semantic search, extract content from URLs, get AI-powered answers with citations, and conduct automated research - all from your terminal.
+
+## Overview
+
+@ai/exa-cli is a zero-dependency command-line interface for the Exa AI search API. It provides intuitive commands for semantic web search, content extraction, AI-powered Q&A, and automated research tasks. Built with Bun and TypeScript, it outputs beautifully formatted markdown by default with JSON support for scripting.
+
+## Installation
+
+```bash
+# Install globally via npm
+npm install -g @ai/exa-cli
+
+# Or use with npx (no installation required)
+npx @ai/exa-cli search "AI startups"
+
+# Or install with Bun
+bun install @ai/exa-cli
+```
+
+## Configuration
+
+Set your Exa API key as an environment variable:
+
+```bash
+export EXA_API_KEY="your-api-key-here"
+```
+
+Or pass it with each command using `--api-key`.
+
+Get your API key at: https://dashboard.exa.ai/api-keys
+
+## Quick Start
+
+```bash
+# Search the web
+exa search "latest AI developments"
+
+# Search with content extraction
+exa search "machine learning papers" --text --num-results 5
+
+# Get AI-powered answers
+exa answer "What is quantum computing?"
+
+# Find similar pages
+exa similar "https://example.com/article"
+
+# Conduct automated research
+exa research "Latest SpaceX valuation" --poll
+```
+
+## Core Commands
+
+### Search
+Search the web using semantic search.
+
+```bash
+exa search "query" [options]
+```
+
+**Options:**
+- `--num-results <n>`: Number of results (default: 10)
+- `--type <auto|fast|deep|instant>`: Search type
+- `--text`: Include full text content
+- `--highlights`: Include relevant highlights
+- `--summary`: Include AI-generated summary
+- `--category <category>`: Filter by category
+- `--include-domains <list>`: Comma-separated domains to include
+- `--exclude-domains <list>`: Comma-separated domains to exclude
+- `--start-date <date>`: Start date (ISO format)
+- `--end-date <date>`: End date (ISO format)
+- `--autoprompt`: Use autoprompt to enhance query
+
+**Categories:** company, research paper, news, pdf, tweet, personal site, financial report, people
+
+### Contents
+Retrieve contents from specific URLs.
+
+```bash
+exa contents <url...> [options]
+```
+
+**Options:**
+- `--text`: Include full text
+- `--highlights`: Include highlights
+- `--summary`: Include summary
+- `--max-age-hours <n>`: Maximum age of cached content
+
+### Similar
+Find pages similar to a given URL.
+
+```bash
+exa similar <url> [options]
+```
+
+**Options:**
+- `--num-results <n>`: Number of results
+- `--exclude-source-domain`: Exclude same domain
+- `--text`, `--highlights`, `--summary`: Content options
+- `--category <category>`: Filter by category
+
+### Answer
+Get AI-powered answers with citations.
+
+```bash
+exa answer "query" [options]
+```
+
+**Options:**
+- `--text`: Include source text in citations
+- `--model <exa|exa-pro>`: Model to use (default: exa)
+- `--stream`: Stream response in real-time
+- `--system-prompt <text>`: Custom system prompt
+
+### Research
+Create automated research tasks.
+
+```bash
+exa research "instructions" [options]
+```
+
+**Options:**
+- `--model <fast|regular|pro>`: Research model
+- `--poll`: Poll until completion
+- `--poll-interval <ms>`: Polling interval (default: 1000)
+- `--timeout <ms>`: Timeout (default: 600000)
+
+### Research Status
+Check research task status.
+
+```bash
+exa research-status <task-id>
+```
+
+### Research List
+List all research tasks.
+
+```bash
+exa research-list [options]
+```
+
+**Options:**
+- `--limit <n>`: Number of tasks
+- `--cursor <token>`: Pagination cursor
+
+## Global Options
+
+- `--api-key <key>`: Exa API key
+- `--json`: Output raw JSON instead of markdown
+- `-h, --help`: Show help
+
+## Examples
+
+### Semantic Search
+```bash
+# Basic search
+exa search "hottest AI startups 2024"
+
+# Deep search with content
+exa search "transformer architecture" --type deep --text --highlights
+
+# Filter by category and date
+exa search "AI acquisitions" --category news --start-date 2024-01-01
+
+# Domain filtering
+exa search "research" --include-domains "arxiv.org,openai.com"
+```
+
+### Content Extraction
+```bash
+# Get article text
+exa contents "https://arxiv.org/abs/2304.15004" --text
+
+# Multiple URLs with highlights
+exa contents "https://example.com/1" "https://example.com/2" --highlights --summary
+```
+
+### AI Q&A
+```bash
+# Basic answer
+exa answer "What is neural machine translation?"
+
+# Streaming response
+exa answer "Explain large language models" --stream
+
+# With custom prompt
+exa answer "Explain recursion" --system-prompt "Explain like I'm 5"
+```
+
+### Research Workflow
+```bash
+# Create and poll research task
+exa research "SpaceX valuation and funding history" --poll
+
+# Check status later
+exa research-status "task-id"
+
+# List all tasks
+exa research-list --limit 10
+```
+
+## Development
+
+```bash
+# Install dependencies
+bun install
+
+# Run in development
+bun run src/index.ts search "test"
+
+# Run tests
+bun test
+
+# Build executable
+bun run build
+```
+
+## Documentation
+
+- [README](https://github.com/ai-tools/exa-cli#readme): Full documentation
+- [Exa API Docs](https://exa.ai/docs): Official Exa API documentation
+- [Issues](https://github.com/ai-tools/exa-cli/issues): Report bugs or request features
+
+## Optional
+
+- [API Reference](https://exa.ai/docs/rest-api): Complete API documentation
+- [TypeScript SDK](https://github.com/exa-labs/exa-js): Official SDK used by this CLI
+- [Changelog](https://github.com/ai-tools/exa-cli/blob/main/CHANGELOG.md): Version history
+
+---
+
+Built with Bun and the Exa API. MIT License.
