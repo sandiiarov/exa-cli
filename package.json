@@ -1,5 +1,5 @@
 {
-  "name": "@ai/exa-cli",
+  "name": "@sandiiarov/exa-cli",
   "version": "0.1.0",
   "description": "CLI tool for Exa Search API",
   "module": "src/index.ts",

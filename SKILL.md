@@ -21,13 +21,13 @@ This skill provides command-line access to the Exa AI search API for semantic we
 
 ```bash
 # Option A: Install globally
-npm install -g @ai/exa-cli
+npm install -g @sandiiarov/exa-cli
 
 # Option B: Use with npx (no installation)
-npx @ai/exa-cli <command>
+npx @sandiiarov/exa-cli <command>
 
 # Option C: Install with Bun
-bun install @ai/exa-cli
+bun install @sandiiarov/exa-cli
 ```
 
 ### 2. Configuration
@@ -443,7 +443,7 @@ Error: API Error 429: Too many requests
 - **Full Documentation**: https://github.com/ai-tools/exa-cli#readme
 - **Exa API Docs**: https://exa.ai/docs
 - **Issue Tracker**: https://github.com/ai-tools/exa-cli/issues
-- **npm Package**: https://www.npmjs.com/package/@ai/exa-cli
+- **npm Package**: https://www.npmjs.com/package/@sandiiarov/exa-cli
 
 ## Examples Summary
 

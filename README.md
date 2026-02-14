@@ -1,4 +1,4 @@
-# @ai/exa-cli
+# @sandiiarov/exa-cli
 
 A powerful CLI tool for the [Exa AI](https://exa.ai) search API. Query the web with semantic search, extract content, get AI-powered answers, and conduct automated research - all from your terminal.
 
@@ -16,13 +16,13 @@ A powerful CLI tool for the [Exa AI](https://exa.ai) search API. Query the web w
 
 ```bash
 # Install globally via npm
-npm install -g @ai/exa-cli
+npm install -g @sandiiarov/exa-cli
 
 # Or use with npx (no installation)
-npx @ai/exa-cli search "AI startups"
+npx @sandiiarov/exa-cli search "AI startups"
 
 # Or install with Bun
-bun install @ai/exa-cli
+bun install @sandiiarov/exa-cli
 
 # Or compile to standalone binary
 bun run build
