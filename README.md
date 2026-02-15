@@ -433,7 +433,7 @@ exa answer "Write a comprehensive guide to prompt engineering" --stream
 
 ```bash
 # Clone and install dependencies
-git clone https://github.com/ai-tools/exa-cli.git
+git clone https://github.com/sandiiarov/exa-cli.git
 cd exa-cli
 bun install
 ```
@@ -534,8 +534,8 @@ MIT
 ## Support
 
 - 📖 [Exa API Documentation](https://exa.ai/docs)
-- 🐛 [Report Issues](https://github.com/ai-tools/exa-cli/issues)
-- 💡 [Request Features](https://github.com/ai-tools/exa-cli/issues)
+- 🐛 [Report Issues](https://github.com/sandiiarov/exa-cli/issues)
+- 💡 [Request Features](https://github.com/sandiiarov/exa-cli/issues)
 
 ---
 

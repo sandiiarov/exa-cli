@@ -440,9 +440,9 @@ Error: API Error 429: Too many requests
 
 ## Resources
 
-- **Full Documentation**: https://github.com/ai-tools/exa-cli#readme
+- **Full Documentation**: https://github.com/sandiiarov/exa-cli#readme
 - **Exa API Docs**: https://exa.ai/docs
-- **Issue Tracker**: https://github.com/ai-tools/exa-cli/issues
+- **Issue Tracker**: https://github.com/sandiiarov/exa-cli/issues
 - **npm Package**: https://www.npmjs.com/package/@ai-bubble/exa-cli
 
 ## Examples Summary

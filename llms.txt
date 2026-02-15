@@ -218,15 +218,15 @@ bun run build
 
 ## Documentation
 
-- [README](https://github.com/ai-tools/exa-cli#readme): Full documentation
+- [README](https://github.com/sandiiarov/exa-cli#readme): Full documentation
 - [Exa API Docs](https://exa.ai/docs): Official Exa API documentation
-- [Issues](https://github.com/ai-tools/exa-cli/issues): Report bugs or request features
+- [Issues](https://github.com/sandiiarov/exa-cli/issues): Report bugs or request features
 
 ## Optional
 
 - [API Reference](https://exa.ai/docs/rest-api): Complete API documentation
 - [TypeScript SDK](https://github.com/exa-labs/exa-js): Official SDK used by this CLI
-- [Changelog](https://github.com/ai-tools/exa-cli/blob/main/CHANGELOG.md): Version history
+- [Changelog](https://github.com/sandiiarov/exa-cli/blob/main/CHANGELOG.md): Version history
 
 ---
 
