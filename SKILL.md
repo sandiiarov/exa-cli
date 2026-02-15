@@ -1,11 +1,11 @@
 ---
 name: exa-cli
-description: CLI tool for the Exa AI search API. Search the web semantically, extract content from URLs, get AI-powered answers with citations, and conduct automated research. Use when the user wants to search the web, find information, extract content from websites, get AI answers with sources, or perform automated research tasks.
+description: CLI tool for Exa AI search API. Search the web semantically, extract content from URLs, get AI answers with citations, and conduct automated research. Use when the user wants to search the web, find information, extract content from websites, get AI answers with sources, or perform automated research tasks.
 ---
 
 # Exa CLI Skill
 
-This skill provides command-line access to the Exa AI search API for semantic web search, content extraction, AI-powered Q&A, and automated research.
+This skill provides command-line access to Exa AI search API for semantic web search, content extraction, AI-powered Q&A, and automated research.
 
 ## Capabilities
 
@@ -21,13 +21,13 @@ This skill provides command-line access to the Exa AI search API for semantic we
 
 ```bash
 # Option A: Install globally
-npm install -g @sandiiarov/exa-cli
+npm install -g @ai-bubble/exa-cli
 
 # Option B: Use with npx (no installation)
-npx @sandiiarov/exa-cli <command>
+npx @ai-bubble/exa-cli <command>
 
 # Option C: Install with Bun
-bun install @sandiiarov/exa-cli
+bun install @ai-bubble/exa-cli
 ```
 
 ### 2. Configuration
@@ -443,7 +443,7 @@ Error: API Error 429: Too many requests
 - **Full Documentation**: https://github.com/ai-tools/exa-cli#readme
 - **Exa API Docs**: https://exa.ai/docs
 - **Issue Tracker**: https://github.com/ai-tools/exa-cli/issues
-- **npm Package**: https://www.npmjs.com/package/@sandiiarov/exa-cli
+- **npm Package**: https://www.npmjs.com/package/@ai-bubble/exa-cli
 
 ## Examples Summary
 

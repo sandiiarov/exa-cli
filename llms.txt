@@ -1,22 +1,22 @@
-# @sandiiarov/exa-cli
+# @ai-bubble/exa-cli
 
-> A powerful CLI tool for the Exa AI search API. Query the web with semantic search, extract content from URLs, get AI-powered answers, and citations, and conduct automated research - all from your terminal.
+> A powerful CLI tool for Exa AI search API. Query the web with semantic search, extract content from URLs, get AI-powered answers and citations, and conduct automated research - all from your terminal.
 
 ## Overview
 
-@sandiiarov/exa-cli is a zero-dependency command-line interface for the Exa AI search API. It provides intuitive commands for semantic web search, content extraction, AI-powered Q&A, and automated research tasks. Built with Bun and TypeScript, it outputs beautifully formatted markdown by default with JSON support for scripting.
+@ai-bubble/exa-cli is a zero-dependency command-line interface for the Exa AI search API. It provides intuitive commands for semantic web search, content extraction, AI-powered Q&A, and automated research tasks. Built with Bun and TypeScript, it outputs beautifully formatted markdown by default with JSON support for scripting.
 
 ## Installation
 
 ```bash
 # Install globally via npm
-npm install -g @sandiiarov/exa-cli
+npm install -g @ai-bubble/exa-cli
 
 # Or use with npx (no installation required)
-npx @sandiiarov/exa-cli search "AI startups"
+npx @ai-bubble/exa-cli search "AI startups"
 
 # Or install with Bun
-bun install @sandiiarov/exa-cli
+bun install @ai-bubble/exa-cli
 ```
 
 ## Configuration
