@@ -527,7 +527,7 @@ Error: API Error 401: Unauthorized
 
 ## License
 
-MIT © [AI Tools](https://github.com/ai-tools)
+MIT
 
 ---
 
