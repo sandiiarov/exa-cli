@@ -10,8 +10,13 @@ import * as answer from "./commands/answer.ts";
 import * as research from "./commands/research.ts";
 import { isValidSearchType, isValidAnswerModel, isValidResearchModel } from "./utils/validation.ts";
 
-const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf-8"));
-const VERSION = packageJson.version;
+let VERSION = "0.1.2";
+try {
+  const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf-8"));
+  VERSION = packageJson.version;
+} catch {
+  // Using hardcoded version when running as compiled binary
+}
 
 const HELP_TEXT = `
 Exa CLI - AI-powered search and content retrieval
