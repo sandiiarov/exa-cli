@@ -1,6 +1,5 @@
 #!/usr/bin/env bun
 
-import { readFileSync } from "fs";
 import { parseArgs } from "util";
 import { createClient } from "./client.ts";
 import * as search from "./commands/search.ts";
@@ -9,14 +8,9 @@ import * as similar from "./commands/similar.ts";
 import * as answer from "./commands/answer.ts";
 import * as research from "./commands/research.ts";
 import { isValidSearchType, isValidAnswerModel, isValidResearchModel } from "./utils/validation.ts";
+import packageJson from "../package.json";
 
-let VERSION = "0.1.2";
-try {
-  const packageJson = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf-8"));
-  VERSION = packageJson.version;
-} catch {
-  // Using hardcoded version when running as compiled binary
-}
+const VERSION = packageJson.version;
 
 const HELP_TEXT = `
 Exa CLI - AI-powered search and content retrieval
